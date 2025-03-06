@@ -1,0 +1,61 @@
+﻿@page "/"
+@layout MainLayout
+@inject IGetCharacters characters
+
+<RadzenRow JustifyContent="JustifyContent.Center" AlignItems="AlignItems.Center" Style="height: 100vh;">
+    <RadzenColumn Size="12" SizeMD="6">
+
+        <div style="display: flex; align-items: center; gap: 10px;">
+            <RadzenTextBox Placeholder="Enter Character ID..." @bind-Value="searchQuery"
+                           Style="flex: 1; width: 100%; padding: 10px; font-size: 16px; border-radius: 8px;"
+                           aria-label="Enter Character ID" />
+            <RadzenButton Text="Search" Style="border-radius: 20px; background-color:#8B5CF6; color: #1F2937;"
+                          Click="OnSearchClick" />
+        </div>
+
+        <div style="margin-top: 20px;">
+            @if (character != null)
+            {
+                <RadzenCard Style="padding: 20px; border-radius: 15px; background-color: #1F2937;">
+                    <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
+                        @foreach (var image in character.Images)
+                        {
+                            <RadzenImage Src="@image" Alt="@character.Name" Width="200" Height="200" Style="border-radius: 100%" class="card-image" Loading="Lazy" />
+                        }
+                    </div>
+                    <h3 style="text-align: center; font-size: 24px; color: #8B5CF6; font-weight: bold;">@character.Name</h3>
+
+
+                    <RadzenButton Text="Back" Click="OnBackClick" Style="width: 100%; border-radius: 20px; background-color: #8B5CF6; color: #1F2937; margin-top: 20px;" />
+                </RadzenCard>
+            }
+            else if (!string.IsNullOrEmpty(searchQuery))
+            {
+                <p style="text-align: center; font-size: 18px; color: #8B5CF6;">No character found with the provided ID</p>
+            }
+        </div>
+    </RadzenColumn>
+</RadzenRow>
+
+@code {
+    private string searchQuery = string.Empty;  
+    private Character? character;
+
+    private async Task OnSearchClick()
+    {
+        if (int.TryParse(searchQuery, out int id) && id > 0)
+        {
+            character = await characters.GetByIdAsync(id);
+        }
+        else
+        {
+            character = null;
+        }
+    }
+
+    private void OnBackClick()
+    {
+        searchQuery = string.Empty;
+        character = null;
+    }
+}

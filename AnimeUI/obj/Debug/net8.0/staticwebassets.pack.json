@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\Documents\\Curso Blazor\\AnimeUI\\AnimeUI\\AnimeUI\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Curso Blazor\\AnimeUI\\AnimeUI\\AnimeUI\\obj\\Debug\\net8.0\\compressed\\8kkj4xhrwy.gz",
+      "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Curso Blazor\\AnimeUI\\AnimeUI\\AnimeUI\\obj\\Debug\\net8.0\\scopedcss\\bundle\\AnimeUI.styles.css",
+      "PackagePath": "staticwebassets\\AnimeUI.styles.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Curso Blazor\\AnimeUI\\AnimeUI\\AnimeUI\\wwwroot\\css\\app.css",
+      "PackagePath": "staticwebassets\\css\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Curso Blazor\\AnimeUI\\AnimeUI\\AnimeUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Curso Blazor\\AnimeUI\\AnimeUI\\AnimeUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Curso Blazor\\AnimeUI\\AnimeUI\\AnimeUI\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Curso Blazor\\AnimeUI\\AnimeUI\\AnimeUI\\wwwroot\\icon-192.png",
+      "PackagePath": "staticwebassets\\icon-192.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Curso Blazor\\AnimeUI\\AnimeUI\\AnimeUI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\User\\Documents\\Curso Blazor\\AnimeUI\\AnimeUI\\AnimeUI\\wwwroot\\sample-data\\weather.json",
+      "PackagePath": "staticwebassets\\sample-data\\weather.json"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AnimeUI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.AnimeUI.props",
+      "PackagePath": "build\\AnimeUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AnimeUI.props",
+      "PackagePath": "buildMultiTargeting\\AnimeUI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.AnimeUI.props",
+      "PackagePath": "buildTransitive\\AnimeUI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
